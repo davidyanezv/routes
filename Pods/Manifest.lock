@@ -1,0 +1,38 @@
+PODS:
+  - AFNetworking (2.0.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.0.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.0.3):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.0.3)
+  - AFNetworking/Security (2.0.3)
+  - AFNetworking/Serialization (2.0.3)
+  - AFNetworking/UIKit (2.0.3):
+    - AFNetworking/NSURLConnection
+  - MBProgressHUD (0.9)
+  - Reachability (3.0.0)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0.2)
+  - MBProgressHUD (~> 0.5)
+  - Reachability (~> 3.0.0)
+  - SDWebImage (~> 3.5)
+
+SPEC CHECKSUMS:
+  AFNetworking: a4d0e9a64de9242986620dafd1b3cee3b413ac5c
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  Reachability: d369b8d7d33730a4bb71d0f601e287da9867c9dd
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+
+COCOAPODS: 0.33.1

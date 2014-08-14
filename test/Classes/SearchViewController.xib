@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="searchBar" destination="gIZ-mM-IYU" id="ziz-P6-Ba8"/>
+                <outlet property="tableView" destination="kIB-ez-Oxw" id="djz-Jo-aAO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kIB-ez-Oxw">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nJi-41-aut"/>
+                        <outlet property="delegate" destination="-1" id="mmF-p6-3Qi"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gIZ-mM-IYU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="HbN-RX-RlI"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3CQ-x9-b2f"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gIZ-mM-IYU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0VH-ZP-vNy"/>
+                <constraint firstAttribute="bottom" secondItem="kIB-ez-Oxw" secondAttribute="bottom" id="1N6-ko-Pk4"/>
+                <constraint firstItem="kIB-ez-Oxw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6HW-bF-H7U"/>
+                <constraint firstItem="gIZ-mM-IYU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KDW-Gd-a5C"/>
+                <constraint firstItem="kIB-ez-Oxw" firstAttribute="top" secondItem="gIZ-mM-IYU" secondAttribute="bottom" id="Qff-9i-79N"/>
+                <constraint firstAttribute="trailing" secondItem="kIB-ez-Oxw" secondAttribute="trailing" id="eGT-NF-EE6"/>
+                <constraint firstAttribute="trailing" secondItem="gIZ-mM-IYU" secondAttribute="trailing" id="kNa-jX-sab"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
